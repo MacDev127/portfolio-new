@@ -1,0 +1,88 @@
+:root {
+  --background: #081c29;
+  --font: #fff;
+  --primary-color: #0074d9;
+  --third-color: #0074d9;
+  --secondary-color: #7fdbff;
+  --test-color: #239589;
+  --button-color: #00abf0;
+  --hover-color: #1299d2;
+  --script-font: 'Inconsolata', monospace;
+  --heading-font: 'Montserrat', sans-serif;
+}
+
+.hero {
+  & .hero__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  & .hero__title {
+    font-size: 90px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: white;
+    font-family: var(--heading-font);
+  }
+  & .hero__subtitle {
+    padding: 1.5rem 0;
+    font-size: 50px;
+    letter-spacing: 1px;
+    color: var(--test-color);
+    font-family: var(--heading-font);
+  }
+  & .hero__buttons {
+    margin: 2rem 0;
+  }
+  & .btn {
+    box-sizing: border-box;
+    appearance: none;
+    background-color: transparent;
+    border-radius: 0.6em;
+    margin-right: 20px;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 20px;
+    height: 58px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: var(--script-font);
+    font-weight: 700;
+  }
+  & .btn:hover,
+  .btn:focus {
+    color: #fff;
+    outline: 0;
+  }
+  & #hero__btn {
+    border-color: #00abf0; /* Replace $blue with a hex color, e.g., #0000FF for blue */
+    color: #081c29;
+    box-shadow: 0 0 40px 40px #00abf0 inset, 0 0 0 0 #00abf0;
+    transition: all 150ms ease-in-out;
+    font-weight: 800;
+  }
+  & #hero__btn:hover {
+    box-shadow: 0 0 10px 0 #00abf0 inset, 0 0 10px 4px #00abf0;
+    color: #00abf0;
+  }
+  & & .hero__socials {
+    display: flex;
+    margin-top: 3rem;
+  }
+  & .hero__socials a {
+    margin-right: 30px;
+    font-size: 30px;
+  }
+  & .hero__socials a:hover svg {
+    fill: #1299d2;
+    transition: ease 0.3s;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero__button {
+    min-width: 170px;
+  }
+}
