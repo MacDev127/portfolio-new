@@ -40,6 +40,14 @@ const Skills = () => {
           <p className="skill__name">PHP</p>
           <i class="bx bxl-php " style={{ fontSize: '52px' }}></i>
         </div>
+        <div className="skill__details">
+          <p className="skill__name">Github</p>
+          <i class="bx bxl-github" style={{ fontSize: '52px' }}></i>{' '}
+        </div>
+        <div className="skill__details">
+          <p className="skill__name">NodeJs</p>
+          <i class="bx bxl-nodejs" style={{ fontSize: '52px' }}></i>{' '}
+        </div>
       </div>
     </div>
   );
