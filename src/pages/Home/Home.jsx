@@ -10,7 +10,7 @@ import './Home.css';
 
 const Home = () => {
   return (
-    <>
+    <div className="home">
       <Nav />
       <section className="hero">
         <Hero />
@@ -28,7 +28,7 @@ const Home = () => {
         <Contact />
       </section>
       <Footer />
-    </>
+    </div>
   );
 };
 
