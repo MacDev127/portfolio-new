@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+  --background: #081c29;
+  --font: #fff;
+  --primary-color: #0074d9;
+  --secondary-color: #7fdbff;
+  --third-color: #00abf0;
+  --hover-color: #1299d2;
+  --script-font: 'Inconsolata', monospace;
+  --heading-font: 'Montserrat', sans-serif;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.align-center {
+  text-align: center;
+}
+
+.row .col {
+  padding: 0 20px;
+  float: left;
+  box-sizing: border-box;
+}
+
+.row .col.x-50 {
+  width: 50%;
+}
+
+.row .col.x-100 {
+  width: 100%;
+}
+
+.content-wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+.get-in-touch {
+  max-width: 650px;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.get-in-touch {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 36px;
+  line-height: 48px;
+  padding-bottom: 48px;
+}
+
+.contact-form .form-field {
+  position: relative;
+  margin: 62px 0;
+}
+
+.contact-form .input-text {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 36px;
+  border-width: 0 0 2px 0;
+  border-color: var(--third-color);
+  font-family: var(--script-font);
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.contact-form .input-text:focus {
+  outline: none;
+}
+
+.contact-form .input-text:focus + .label,
+.contact-form .input-text.not-empty + .label {
+  transform: translateY(-24px);
+}
+
+.contact-form .label {
+  position: absolute;
+  left: 20px;
+  bottom: 11px;
+  font-family: var(--script-font);
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: var(--secondary-color);
+  cursor: text;
+  transition: transform 0.2s ease-in-out;
+}
+
+.contact-form .submit-btn {
+  display: inline-block;
+  background-color: var(--third-color);
+  color: #081c29;
+  font-family: var(--script-font);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #0399d4;
+  transition: 0.2s ease;
+}

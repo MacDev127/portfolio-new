@@ -45,6 +45,7 @@
     display: inline-flex;
     font-size: 20px;
     height: 58px;
+    width: 150px;
     justify-content: center;
     align-items: center;
     text-decoration: none;
@@ -67,7 +68,7 @@
     box-shadow: 0 0 10px 0 #00abf0 inset, 0 0 10px 4px #00abf0;
     color: #00abf0;
   }
-  & & .hero__socials {
+  & .hero__socials {
     display: flex;
     margin-top: 3rem;
   }
@@ -81,8 +82,36 @@
   }
 }
 
-@media (min-width: 768px) {
+/* Tablets  */
+@media only screen and (max-width: 768px) {
+  .hero__container .hero__title {
+    font-size: 50px;
+  }
   .hero__button {
-    min-width: 170px;
+    width: 150px;
+  }
+
+  .hero__container .hero__socials a {
+    margin-right: 30px;
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .hero__container .hero__title {
+    font-size: 50px;
+  }
+  .hero__container .hero__subtitle {
+    font-size: 30px;
+  }
+  .hero__button {
+    width: 150px;
+  }
+  .hero__container .hero__socials {
+    margin-top: 1rem;
+  }
+  .hero__container .hero__socials a {
+    margin-right: 30px;
+    font-size: 30px;
   }
 }

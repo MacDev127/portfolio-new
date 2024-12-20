@@ -49,6 +49,7 @@
   & .navbar ul {
     display: flex;
     list-style: none;
+    padding-left: 0 !important;
   }
 
   & .nav-item {
@@ -101,8 +102,8 @@
   .nav-menu.active {
     left: 0;
   }
-
   .nav-item {
-    margin: 1.5rem 0;
+    padding: 2rem !important;
+    font-weight: 400;
   }
 }

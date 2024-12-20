@@ -1,7 +1,25 @@
+:root {
+  --background: #081c29;
+  --font: #fff;
+  --primary-color: #0074d9;
+  --secondary-color: #7fdbff;
+  --third-color: #00abf0;
+  --hover-color: #1299d2;
+  --script-font: 'Inconsolata', monospace;
+  --heading-font: 'Montserrat', sans-serif;
+}
+
 .footer {
   width: 100%;
   height: 1rem;
   display: flex;
   justify-content: center;
+  color: var(--primary-color);
   align-items: center;
+  padding-bottom: 10px;
+}
+
+.footer p {
+  color: var(--secondary-color);
+  font-family: var(--script-font);
 }

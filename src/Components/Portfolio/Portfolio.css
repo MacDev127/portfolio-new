@@ -10,3 +10,16 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
+
+/* Tablets  */
+@media only screen and (max-width: 768px) {
+  .portfolio__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .portfolio__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

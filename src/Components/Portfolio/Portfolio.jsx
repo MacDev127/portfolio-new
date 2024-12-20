@@ -10,26 +10,23 @@ const Portfolio = () => {
 
       <div className="portfolio__wrapper">
         <a href="https://github.com/MacDev127/conflict-textiles-app">
-          <Card
-            cardTitle="Conflict Textiles"
-            cardImg="../../../public/port1.jpg"
-          />
+          <Card cardTitle="Conflict Textiles" cardImg="/port1.jpg" />
         </a>
         <a href="https://github.com/MacDev127/Cactus_Jacks">
-          <Card cardTitle="Cactus Jacks" cardImg="../../../public/port2.jpg" />
+          <Card cardTitle="Cactus Jacks" cardImg="/port2.jpg" />
         </a>
         <a href="https://github.com/MacDev127/recipe-app">
-          <Card cardTitle="Recipe App" cardImg="../../../public/port3.jpg" />
+          <Card cardTitle="Recipe App" cardImg="/port3.jpg" />
         </a>
-        <Card
-          cardTitle="Eagle Landscaping"
-          cardImg="../../../public/port4.jpg"
-        />
-        <Card
-          cardTitle="Sessiagh Cottage"
-          cardImg="../../../public/port5.jpg"
-        />
-        <Card cardTitle="title" cardImg="https://via.placeholder.com/150" />
+        <a href="https://github.com/MacDev127/eagle-landscaping">
+          <Card cardTitle="Eagle Landscaping" cardImg="/port4.jpg" />
+        </a>
+        <a href="https://github.com/MacDev127/sessiagh">
+          <Card cardTitle="Sessiagh Cottage" cardImg="/port5.jpg" />
+        </a>
+        <a href="https://github.com/MacDev127/dashboard">
+          <Card cardTitle="Dashboard" cardImg="/port6.png" />
+        </a>
       </div>
     </div>
   );
