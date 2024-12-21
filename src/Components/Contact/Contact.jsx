@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Contact.css'; // Assuming you save the CSS separately
+import './Contact.css';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -14,13 +14,6 @@ const ContactForm = () => {
       ...formData,
       [name]: value,
     });
-
-    // Add the "not-empty" class if input has value
-    if (e.target.value) {
-      e.target.classList.add('not-empty');
-    } else {
-      e.target.classList.remove('not-empty');
-    }
   };
 
   return (
@@ -31,9 +24,9 @@ const ContactForm = () => {
         method="POST"
         data-netlify="true"
         name="contact"
-        netlify
       >
         <input type="hidden" name="form-name" value="contact" />
+        <input type="hidden" name="subject" />
 
         <div className="field__container">
           <div className="form-field col x-50">
@@ -68,15 +61,14 @@ const ContactForm = () => {
 
         <div className="form__field--wrapper">
           <div className="form-field col x-100">
-            <input
+            <textarea
               id="message"
               className="input-text js-input"
-              type="text"
               name="message"
               value={formData.message}
               onChange={handleInputChange}
               required
-            />
+            ></textarea>
             <label className="label" htmlFor="message">
               Message
             </label>
