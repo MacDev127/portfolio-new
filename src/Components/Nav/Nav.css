@@ -50,11 +50,14 @@
     display: flex;
     list-style: none;
     padding-left: 0 !important;
+    margin-bottom: 0 !important;
   }
 
   & .nav-item {
     padding: 1rem;
     font-weight: 400;
+    cursor: pointer;
+    background-color: var(--background);
   }
 
   & ul li a {
@@ -71,6 +74,11 @@
 }
 & .burger_menu {
   display: none;
+}
+
+ul li a:hover {
+  color: var(--button-color);
+  transition: 0.2s ease;
 }
 
 @media screen and (max-width: 940px) {
@@ -105,5 +113,17 @@
   .nav-item {
     padding: 2rem !important;
     font-weight: 400;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header .navbar {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .header .navbar {
+    padding: 0;
   }
 }

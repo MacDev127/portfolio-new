@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { Link } from 'react-scroll';
 import './Nav.css';
 
 const Nav = () => {
@@ -28,49 +29,64 @@ const Nav = () => {
         </div>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
           <li className="nav-item">
-            <a
-              href="/"
+            <Link
+              to="home"
+              smooth={true}
+              offset={-160} // Adjust for fixed header height
+              duration={400}
               onClick={() => closeMenu('Home')}
               className={active === 'Home' ? 'active' : ''}
             >
               Home
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a
-              href="#about"
+            <Link
+              to="about"
+              smooth={true}
+              offset={-160}
+              duration={400}
               onClick={() => closeMenu('About')}
               className={active === 'About' ? 'active' : ''}
             >
               About
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a
-              href="#skills"
+            <Link
+              to="skills"
+              smooth={true}
+              offset={-160}
+              duration={400}
               onClick={() => closeMenu('Skills')}
               className={active === 'Skills' ? 'active' : ''}
             >
               Skills
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a
-              href="#portfolio"
+            <Link
+              to="portfolio"
+              smooth={true}
+              offset={-160}
+              duration={400}
               onClick={() => closeMenu('Portfolio')}
               className={active === 'Portfolio' ? 'active' : ''}
             >
               Portfolio
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a
-              href="#contact"
+            <Link
+              to="contact"
+              smooth={true}
+              offset={-160}
+              duration={400}
               onClick={() => closeMenu('Contact')}
               className={active === 'Contact' ? 'active' : ''}
             >
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

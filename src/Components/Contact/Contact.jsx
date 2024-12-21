@@ -23,16 +23,17 @@ const ContactForm = () => {
     }
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-    // Add logic to handle form submission
-  };
-
   return (
     <div className="contact" id="contact">
       <h1 className="title">Get in touch</h1>
-      <form className="contact-form row" onSubmit={handleSubmit}>
+      <form
+        className="contact-form row"
+        method="POST"
+        data-netlify="true"
+        name="contact"
+      >
+        <input type="hidden" name="form-name" value="contact" />
+
         <div className="field__container">
           <div className="form-field col x-50">
             <input

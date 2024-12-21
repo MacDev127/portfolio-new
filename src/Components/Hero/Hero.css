@@ -28,6 +28,7 @@
   & .hero__subtitle {
     padding: 1.5rem 0;
     font-size: 50px;
+    font-weight: 600;
     letter-spacing: 1px;
     color: var(--test-color);
     font-family: var(--heading-font);
@@ -82,8 +83,10 @@
   }
 }
 
-/* Tablets  */
 @media only screen and (max-width: 768px) {
+  .hero__container {
+    margin-top: 50px;
+  }
   .hero__container .hero__title {
     font-size: 50px;
   }
@@ -95,9 +98,15 @@
     margin-right: 30px;
     font-size: 30px;
   }
+  .hero__buttons {
+    display: flex;
+  }
 }
 
 @media only screen and (max-width: 414px) {
+  .hero__container {
+    margin-top: 50px;
+  }
   .hero__container .hero__title {
     font-size: 50px;
   }
@@ -113,5 +122,8 @@
   .hero__container .hero__socials a {
     margin-right: 30px;
     font-size: 30px;
+  }
+  .hero__buttons {
+    display: flex;
   }
 }

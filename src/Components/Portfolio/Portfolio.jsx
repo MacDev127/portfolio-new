@@ -21,8 +21,8 @@ const Portfolio = () => {
         <a href="https://github.com/MacDev127/eagle-landscaping">
           <Card cardTitle="Eagle Landscaping" cardImg="/port4.jpg" />
         </a>
-        <a href="https://github.com/MacDev127/sessiagh">
-          <Card cardTitle="Sessiagh Cottage" cardImg="/port5.jpg" />
+        <a href="https://github.com/MacDev127/home-shop">
+          <Card cardTitle="Home Shop" cardImg="/port5.jpg" />
         </a>
         <a href="https://github.com/MacDev127/dashboard">
           <Card cardTitle="Dashboard" cardImg="/port6.png" />

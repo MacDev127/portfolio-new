@@ -20,10 +20,10 @@ const Hero = () => {
           </a>
         </div>
         <div className="hero__socials">
-          <a href="">
+          <a href="https://github.com/MacDev127?tab=repositories">
             <FaGithub />
           </a>
-          <a href="">
+          <a href="https://www.linkedin.com/in/sean-mcmullan1/">
             <FaLinkedin />
           </a>
         </div>

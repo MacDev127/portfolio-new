@@ -4,6 +4,7 @@
   height: 200px;
   overflow: hidden;
   cursor: pointer;
+  box-shadow: rgba(0, 171, 240, 0.4) 0px 10px 10px -10px;
 }
 
 .port__card--container {
@@ -25,7 +26,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 171, 240, 0.7);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,9 +35,11 @@
 }
 
 .port__card--title {
-  color: white;
+  color: #081c29;
   font-size: 1.5rem;
+  font-weight: 600;
   text-align: center;
+  background: transparent;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
@@ -58,10 +61,18 @@
     width: 170px;
     height: 150px;
   }
+  .port__card--title {
+    color: white;
+    font-size: 1rem;
+  }
 }
 
 @media only screen and (max-width: 414px) {
   .portfolio__wrapper {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .port__card--title {
+    color: white;
+    font-size: 1rem;
   }
 }
