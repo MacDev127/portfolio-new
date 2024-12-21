@@ -8,12 +8,36 @@ const ContactForm = () => {
     message: '',
   });
 
+  const [formStatus, setFormStatus] = useState('');
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
       [name]: value,
     });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const form = e.target;
+
+    setFormStatus('Submitting...');
+
+    const formData = new FormData(form);
+    fetch('/', {
+      method: 'POST',
+      body: formData,
+    })
+      .then(() => {
+        setFormStatus('Email sent successfully!');
+        form.reset();
+        setTimeout(() => setFormStatus(''), 5000);
+      })
+      .catch(() => {
+        setFormStatus('Error sending the email. Please try again.');
+      });
   };
 
   return (
@@ -24,9 +48,14 @@ const ContactForm = () => {
         method="POST"
         data-netlify="true"
         name="contact"
+        onSubmit={handleSubmit}
       >
         <input type="hidden" name="form-name" value="contact" />
-        <input type="hidden" name="subject" />
+        <input
+          type="hidden"
+          name="subject"
+          value="Sales inquiry from mysitename.netlify.app"
+        />
 
         <div className="field__container">
           <div className="form-field col x-50">
@@ -78,6 +107,8 @@ const ContactForm = () => {
           </div>
         </div>
       </form>
+      {/* Display form status message */}
+      {formStatus && <p className="form-status">{formStatus}</p>}
     </div>
   );
 };
